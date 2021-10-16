@@ -114,6 +114,76 @@ function displayRole(employee) {
     }
 }
 
-function getCardHtml() {
-    
+function getHtml() {
+   const html =  `
+< !DOCTYPE html >
+<html lang='en'>
+<head>
+<meta charset= "UTF-8">
+<meta name= "viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv= "X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href=""
+<title>Team Profile</title>
+
+<style>
+.row {
+    display:flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
 }
+
+.card {
+    border-radius: 6px;
+    padding:15px;
+    background-color: antiquewhite;
+    color: purple;
+    margin 15px;
+}
+
+.text {
+    border-radius: 6px;
+    padding: 15px;
+    background-color: purple;
+    color: lightgrey;
+    margin 15px;
+}
+
+.col{
+    flex: 1;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark justify-content-center align-items-center">
+        <span class="navbar-brand mb-0 h1">
+            <h1>The Team</h1>
+        </span>
+    </nav>
+    <div class="row">
+    <div class ="card bg-dark justify-content-center align-items-center" style="width: 20rem;">
+    <div class= "col card-header">
+        <h4>${employeeArray.name}</h4>
+    </div>
+    <div class="col card-header">
+        <h4>${employeeArray.role}</h4>
+    </div>
+    <ul class="list-group list-group-flush text">
+        <li class="list-group-item">ID: ${employeeArray.id}</li>
+        <li class="list-group-item">Email: ${employeeArray.email}</li>
+        <li class="list-group-item">${displayRole(employeeArray)}</li>
+    </ul>
+</div>
+</body>
+</html>
+
+`;
+
+    const fs = require("fs");
+    fs.writeFile('newfile.html', html, function(err) {
+        if (err) throw err;
+        console.log('File is created successfully.');
+    });
+}
+
+runInquirer();
