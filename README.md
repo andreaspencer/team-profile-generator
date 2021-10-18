@@ -19,4 +19,10 @@ Using node, jest and inquirer to create object oriented programming to first run
 * added in bootstrap to flex html
 * used jest and inquirer
 
+##### Installation Instructions
+1. clone link from github 
+2. go to terminal and git clone to an accessible location locally
+    - on terminal type cd to move into team-project-generator
+    - type code . once in file and VS will open the project
+
 ##### Screenshot
