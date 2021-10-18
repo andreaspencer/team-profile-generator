@@ -26,3 +26,9 @@ Using node, jest and inquirer to create object oriented programming to first run
     - type code . once in file and VS will open the project
 
 ##### Screenshot
+<img width="1004" alt="Screen Shot 2021-10-17 at 5 11 42 PM" src="https://user-images.githubusercontent.com/87836575/137650134-569a152e-21f8-4beb-a25f-5d9ac98af805.png">
+
+##### Video Link
+https://watch.screencastify.com/v/4AmZKMUC4Lyusp6J5O1J
+
+shows working application
